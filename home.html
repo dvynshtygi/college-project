@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Nerko+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@700&family=East+Sea+Dokdo&family=Lobster&family=Ranchers&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+</head>
+  <title>home</title>
+</head>
+<style>
+  *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  body{
+    background-color: oldlace;
+  }
+
+  .navbar{
+  display: flex;
+background:#ffffff;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+ 
+}
+  
+  .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   list-style: none;
+   padding: 1rem;
+ position: absolute;
+ float: right;
+ right: 3rem;
+ overflow: hidden;
+  
+  }
+  .navbar img{
+    display: flex;
+    height: 4rem;
+   padding: 1rem;
+height: 7rem;
+   justify-content: center;
+    align-items: center;
+   list-style: none;
+   padding: 1rem;
+
+  }
+  
+  .nav li a{
+    text-decoration: none;
+    margin: 2rem;
+    font-family: 'Anton', sans-serif;
+    color: black;
+    font-size: 18px;
+    
+  }
+  .nav li a:hover{
+   
+    color:  #f8486b;
+    font-size: x-large;
+    cursor: pointer;
+  }
+
+  #btn{
+    font-size: 15px;
+    padding: 5px 20px;
+   border-radius: 50px;
+  background-color: #fd6885;
+ border: none;
+  color: white;
+  font-family: 'Dancing Script', cursive;
+   
+
+}
+
+#btn:hover{
+    background-color:#f8486b ;
+    cursor: pointer;
+ 
+}
+
+#btn i{
+  margin-left: 0.5rem;
+}
+
+
+.grid{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+
+}
+.para{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+ 
+}
+.para h1{
+margin: 2rem 0px 2rem 0px;
+font-family: 'Ranchers', cursive;
+font-size: 2.6rem;
+font-family: 'Lobster', cursive;
+}
+
+.para p{
+  width: 60%;
+  font-family: 'East Sea Dokdo', cursive;
+font-size: 1.4rem;
+
+}
+
+
+.mn {
+  background-color: #f8486b; 
+  border: none; 
+  color: white; 
+  padding: 12px 16px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  border-radius: 4rem;
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+  width: 10rem;
+  margin-top: 2rem;
+}
+
+
+}
+.mn i{
+  margin-left: 0.5rem;
+
+  
+  
+}
+
+.mn:hover{
+  background-color: #f52750;
+}
+.cards{
+  display: flex;
+ 
+  align-items: center;
+ justify-content: center;
+ align-items: center;
+  padding: 2rem;
+background-color: rgb(2 38 40 / 1) ;
+overflow: hidden;
+height: 20vh;
+}
+
+.card1{
+  display: flex;
+  flex-direction: column;
+background-color: grey;
+padding: 1rem;
+align-items: center;
+justify-content: center;
+margin: 5rem;
+}
+
+.card1 h3{
+  color: white;
+}
+.card1 i{
+  color:#f52750;
+}
+.card1 p{
+
+}
+.card2{
+  display: flex;
+  flex-direction: column;
+background-color: grey;
+padding: 1rem;
+align-items: center;
+justify-content: center;
+}
+
+.card2 h3{
+  color: white;
+}
+.card2 i{
+  color:#f52750;
+}
+.card2 p{
+
+}
+.card3{
+  display: flex;
+  flex-direction: column;
+background-color: grey;
+padding: 1rem;
+align-items: center;
+justify-content: center;
+margin: 5rem;
+}
+
+.card3 h3{
+  color: white;
+}
+.card3 i{
+  color:#f52750;
+  margin-right: 5px;
+}
+.card3 p{
+
+}
+.card4{
+  display: flex;
+  flex-direction: column;
+background-color: grey;
+padding: 1rem;
+align-items: center;
+justify-content: center;
+}
+
+.card4 h3{
+  color: white;
+}
+.card4 i{
+  color:#f52750;
+}
+.card4 p{
+
+}
+
+.firstcategory{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem;
+  overflow: hidden;
+}
+#salonimages img{
+  height: 25rem;
+  margin: 2rem;
+}
+.mr1 button{
+    padding: 10px 30px;
+    background-color:moccasin;
+    border-radius: 2rem;
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+    color: #f52750;
+    border: none;
+    
+   
+  }
+
+  .mr1 button:hover{
+ background-color:  #f52750;
+ color: moccasin;
+ cursor: pointer;
+  }
+
+  
+.hhh{
+  font-family: 'Reggae One', cursive;
+  font-size: 35px;
+}
+.secondcategory{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem;
+  overflow: hidden;
+}
+#spaimages img{
+  height: 25rem;
+ margin: 2rem;
+}
+.mr2 button{
+    padding: 10px 30px;
+    background-color:moccasin;
+    border-radius: 2rem;
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+    color: #f52750;
+    border: none;
+    
+   
+  }
+
+  .mr2 button:hover{
+ background-color:  #f52750;
+ color: moccasin;
+ cursor: pointer;
+  }
+
+  
+.hhh{
+  font-family: 'Reggae One', cursive;
+  font-size: 35px;
+}
+.thirdcategory{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem;
+  overflow: hidden;
+}
+#groceriesimages img{
+  height: 17rem;
+  margin: 2rem;
+}
+.mr3 button{
+    padding: 10px 30px;
+    background-color:moccasin;
+    border-radius: 2rem;
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+    color: #f52750;
+    border: none;
+    
+   
+  }
+
+  .mr3 button:hover{
+ background-color:  #f52750;
+ color: moccasin;
+ cursor: pointer;
+  }
+
+  
+.hhh{
+  font-family: 'Reggae One', cursive;
+  font-size: 35px;
+}
+.fourthcategory{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem;
+  overflow: hidden;
+}
+#medicalimages img{
+  height: 13rem;
+  margin: 2rem;
+}
+.mr4 button{
+    padding: 10px 30px;
+    background-color:moccasin;
+    border-radius: 2rem;
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+    color: #f52750;
+    border: none;
+    
+   
+  }
+
+  .mr4 button:hover{
+ background-color:  #f52750;
+ color: moccasin;
+ cursor: pointer;
+  }
+
+  
+.hhh{
+  font-family: 'Reggae One', cursive;
+  font-size: 35px;
+}
+
+.map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15rem;
+    overflow: hidden;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    padding: 5rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+    font-family: 'Secular One', sans-serif;
+    
+}
+
+.bottom::before{
+    content: "";
+    position: absolute;
+    background:url('img/footer 2.jpg') no-repeat center center/cover;
+    background-color: #0a0a0a;
+    height: 100%;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+    overflow: hidden;
+}
+
+.images{
+    margin: 3rem;
+    overflow: hidden;
+   
+}
+#fb{
+    background-color:#f8486b ;
+    padding: 5px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#insta{
+    background-color:#f8486b ;
+    padding: 5px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#tw{
+    background-color:#f8486b ;
+    padding: 5px;
+    border-radius: 50%;
+overflow: hidden;
+}
+#in{
+    background-color:#f8486b ;
+    padding: 5px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+@media (max-width: 1094px){
+  .grid{
+    flex-direction: column;
+  }
+
+}
+
+@media (max-width: 1094px){
+  .para{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+
+}
+}
+
+@media(max-width: 1000px){
+  .cards{
+    display: flex;
+    flex-direction: column;
+    height: 130vh;
+  }
+
+  .card1{
+    width: 60%;
+  }
+  .card2{
+    width: 60%;
+  }
+  .card3{
+    width: 60%;
+  }
+  .card4{
+    width: 60%;
+  }
+}
+
+
+@media (max-width: 700px){
+  #ddd{
+    height: 30rem;
+  }
+}
+
+@media (max-width: 424px){
+  #ddd{
+    height: 18rem;
+  }
+}
+
+@media (max-width: 546px){
+  .para h1{
+    font-size: 30px;
+  }
+
+}
+@media (max-width: 396px){
+  .para h1{
+    font-size: 20px;
+  }
+}
+
+@media(max-width: 546px){
+  .para p{
+  
+    width: 70%;
+  }
+  }
+}
+
+@media (max-width: 302px){
+  .cards{
+    height: 150vh;
+  }
+}
+
+@media (max-width: 480px){
+  #spaimages img{
+  overflow:hidden;
+  height: 15rem;
+  align-self: center;
+  }
+}
+
+@media (max-width: 550px){
+  #salonimages img{
+  overflow:hidden;
+  height: 20rem;
+  align-self: center;
+ 
+  }
+}
+@media (max-width: 475px){
+  #salonimages img{
+  overflow:hidden;
+  height: 17rem;
+  align-self: center;
+  
+
+  }
+}
+@media (max-width: 419px){
+  #salonimages img{
+  
+  height: 15rem;
+  align-self: center;
+  
+
+  }
+}
+@media (max-width: 390px){
+  #salonimages img{
+  
+  height: 12rem;
+  align-self: center;
+  
+
+  }
+}
+@media (max-width: 342px){
+  #salonimages img{
+  
+  height: 10rem;
+  align-self: center;
+  
+
+  }
+}
+
+
+@media (max-width: 354px){
+  #spaimages img{
+
+  height: 12rem;
+  align-self: center;
+  
+
+  }
+}
+
+@media (max-width: 344px){
+  .hhh{
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 528px){
+  #medicalimages img{
+    height: 10rem;
+    
+  }
+}
+@media (max-width: 440px){
+  #medicalimages img{
+    height: 8rem;
+    
+  }
+}
+@media (max-width: 388px){
+  #medicalimages img{
+    height: 6rem;
+    
+  }
+}
+@media (max-width: 338px){
+  #medicalimages img{
+    height: 5rem;
+    
+  }
+}
+
+@media (max-width: 568px){
+  #groceriesimages img{
+    height: 10rem;
+  }
+}
+@media (max-width: 402px){
+  #groceriesimages img{
+    height: 8rem;
+  }
+}
+@media (max-width: 350px){
+  #groceriesimages img{
+    height: 6rem;
+  }
+}
+.bottom h2{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+
+.container {
+
+  cursor: pointer;
+right: 2rem;
+display: inline-block;
+position: absolute;
+display: none;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+hr.rounded {
+  border-top: 8px solid rgb(216, 145, 22);
+  border-radius: 5px;
+  width: 72%;
+}
+
+@media (max-width: 1160px){
+    .nav li a{
+        
+        display: none;
+    }
+    .container{
+        display: block;
+    }
+
+ #btn{
+     display: none;
+ }
+}
+
+
+nav {
+    background: rgb(240, 239, 239);
+    color: #f52750;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+}
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(75, 65, 65);
+    font-size: 1.5rem;
+    font-family: 'Anton', sans-serif;
+}
+nav .mainMenu li a:hover {
+    color: #f52750;
+}
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+nav .mainMenu .closeMenu , .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+.fa-facebook:hover {color: rgb(0, 110, 255);}
+.fa-twitter:hover {color: rgb(86, 154, 243);}
+.fa-instagram:hover {color: rgb(255, 0, 191);}
+.fa-github:hover {color: rgb(255, 123, 0);}
+
+nav .logo {
+    margin: 6px;
+    font-size: 25px;
+    cursor: pointer;
+}
+@media(max-width: 800px){
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        transition: top 1s ease;
+        display: none;
+    }
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+    }
+    nav .openMenu {
+        display: block;
+    }
+    nav .mainMenu li a:hover {
+        background: none;
+        color: #f52750;
+        font-size: 1.6rem;
+
+    }
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+}
+
+.logo img{
+  height: 5rem;
+
+}
+
+.icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.mn a{
+  text-decoration: none;
+  color: white;
+}
+</style>
+
+<body>
+  
+  <!-- <div class="navbar">
+    <div class="container" onclick="myFunction(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+   
+    <img src="img3/logo4.png" alt="" id="logo">
+    
+    <ul class="nav">
+      <li><a href="">Home</a></li>
+      <li><a href="">Services</a></li>
+      <li><a href="">About</a></li>
+      <li><a href=""> contact</a></li>
+      <button id="btn"> EMAIL US<i class="fa fa-envelope"></i></button>
+    </ul>
+    
+  </div> -->
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Humburger Menu</title>
+      <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+  </head>
+  <body>
+          <nav>
+              <div class="logo"><img src="img/logo4.png" alt=""></div>
+              <div class="openMenu"><i class="fa fa-bars"></i></div>
+              <ul class="mainMenu">
+                  <li><a href="./home.html">Home</a></li>
+                  <li><a href="./services.html">Services</a></li>
+                  <li><a href="./contact.html">Contact</a></li>
+                  <li><a href="./about.html">About</a></li>
+                  <div class="closeMenu"><i class="fa fa-times"></i></div>
+                  <span class="icons">
+                      <i class="fab fa-facebook"></i>
+                      <i class="fab fa-instagram"></i>
+                      <i class="fab fa-twitter"></i>
+                      <i class="fab fa-linkedin"></i>
+                  </span>
+              </ul>
+          </nav>
+
+  <div class="grid">
+    <img id="ddd" src="img3/main2.png" alt="">
+    <div class="para">
+      <h3>GRAB NOW</h3>
+      <h1>BEST OFFERS AND DISCOUNT!</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nesciunt in libero accusantium illum perferendis veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi suscipit nobis tempora quasi non dolor libero fugit repellat labore totam culpa laboriosam eveniet odio iste, optio a! Velit, voluptas possimus facere ipsam ad ea exercitationem!</p>
+  
+      <button class="mn"  ><a href="./salon.html">check now</a> <i class="fa fa-arrow-right"></i></button>
+    </div>
+  </div>
+
+  <div class="cards">
+    <div class="card1">
+  <h3><i class="fa fa-gift"></i> BEST OFFERS</h3>
+  <p>in your city</p>
+    </div>
+    <div class="card2">
+  <h3><i class="fa fa-thumbs-up"></i> STRESS FREE</h3>
+  <p>easy to use</p>
+    </div>
+    <div class="card3">
+  <h3><i class="fa fa-bitcoin"></i>HUGE SAVING</h3>
+  <p>at lowest price</p>
+    </div>
+    <div class="card4">
+  <h3><i class="fa fa-check"></i> GENUINE OFFERS</h3>
+  <p>100% real</p>
+    </div>
+    
+  </div>
+
+  <div class="firstcategory">
+    <h2 class="hhh">SALON</h2>
+   
+    <div id="salonimages">
+      <img src="img3/Screenshot (389) (1).jpg" alt="">
+      <img src="img3/Screenshot (392).jpg" alt="">
+      <img src="img3/Screenshot (393).jpg" alt="">
+    </div>
+    <div class="mr1">
+      <button><a href="./salon.html">More</a></button>
+    </div>
+  
+  </div>
+  
+  
+  </div>
+
+  <div class="secondcategory">
+    <hr class="rounded">
+    <h2 class="hhh">SPA</h2>
+   
+    <div id="spaimages">
+      <img src="img3/Screenshot (395).jpg" alt="">
+      <img src="img3/Screenshot (396).jpg" alt="">
+      <img src="img3/Screenshot (396) (1).jpg" alt="">
+    </div>
+    <div class="mr2">
+      <button><a href="./spa.html">More</a></button>
+    </div>
+  
+  </div>
+  
+  
+  
+  </div>
+  
+  <div class="thirdcategory">
+    <hr class="rounded">
+    <h2 class="hhh">GROCERIES</h2>
+    
+    <div id="groceriesimages">
+      <img src="img3/Screenshot (397).jpg" alt="">
+      <img src="img3/Screenshot (398).jpg" alt="">
+      <img src="img3/Screenshot (399).jpg" alt="">
+    </div>
+    <div class="mr3">
+      <button><a href="./grocery.html">More</a></button>
+    </div>
+  
+  </div>
+  
+  
+  </div>
+  
+  <div class="fourthcategory">
+    <hr class="rounded">
+    <h2 class="hhh">MEDICAL</h2>
+    
+    <div id="medicalimages">
+      <img src="img3/Screenshot (402).jpg" alt="">
+      <img src="img3/Screenshot (403).jpg" alt="">
+      <img src="img3/Screenshot (405).jpg" alt="">
+    </div>
+    <div class="mr4">
+      <button><a href="./medical.html">More</a></button>
+    </div>
+  
+  </div>
+  <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111989.15209554778!2d77.32481641787062!3d28.699785606662115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf1bb41c50fdf%3A0xe6f06fd26a7798ba!2sGhaziabad%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1601520332620!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  </div>
+  <footer class="bottom">
+    <h3>Follow US for more offer and updates</h3>
+    <h2>Stay In Touch</h2>
+    <p>Hope you get what you want, thankyou for visiting on our site. you are welcomed again and again</p>
+    <div class="images">
+       <a  href="https://www.facebook.com/" target="_blank" class="hv"><img id="fb" src="img3/fb2.png" alt=""></a>
+       <a href="https://www.instagram.com/"  target="_blank" class="hv"><img id="insta" src="img3/in2.png" alt=""></a>
+       <a href="https://twitter.com/" target="blank" class="hv"><img id="tw" src="img3/twt.png" alt=""></a>
+       <a href="https://www.linkedin.com/" target="blank" class="hv"><img id="in" src="img3/ldn2.png" alt=""></a>
+        
+    </div>
+  </footer>
+  
+ 
+  <script>function myFunction(x) {
+    x.classList.toggle("change");
+  }
+  
+  
+  const mainMenu = document.querySelector('.mainMenu');
+const closeMenu = document.querySelector('.closeMenu');
+const openMenu = document.querySelector('.openMenu');
+
+
+
+
+openMenu.addEventListener('click',show);
+closeMenu.addEventListener('click',close);
+
+function show(){
+    mainMenu.style.display = 'flex';
+    mainMenu.style.top = '0';
+}
+function close(){
+    mainMenu.style.top = '-100%';
+}
+  
+  
+  </script>
+</body>
+</html>

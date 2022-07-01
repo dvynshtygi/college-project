@@ -1,0 +1,819 @@
+        
+        
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Peddana&family=Secular+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Nerko+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Teko:wght@500&display=swap" rel="stylesheet">
+  
+    <title>contact Project
+    </title>
+</head>
+<style>
+    /* navbar */
+    * {
+        margin:0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+   
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    align-items: center;
+   
+}
+
+.nav{
+    display: flex;
+    list-style: none;
+
+
+padding: 1rem 5rem;
+  
+    
+    
+}
+
+.nav li a{
+    text-decoration: none;
+  margin: 3rem;
+   font-size: 20px;
+   font-family: 'Secular One', sans-serif;
+   color: black;
+   
+    
+}
+.container {
+  display: inline-block;
+  cursor: pointer;
+ right: 1rem;
+ display: none;
+
+ position: absolute;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+.navbar img{
+    height: 5rem;
+   padding: 4px;
+ margin: 0rem 3rem;
+ cursor: pointer;
+    
+}
+
+#abt{
+    font-size: 15px;
+    padding: 5px 30px;
+   border-radius: 50px;
+  background-color: #fd6885;
+ border: none;
+  color: white;
+  font-family: 'Secular One', sans-serif;
+   
+
+}
+
+.nav li a:hover{
+    color: #fd6885 ;
+   
+    cursor: pointer;
+}
+
+#abt:hover{
+    background-color:#f8486b ;
+    cursor: pointer;
+ 
+}
+
+/* intro section */
+
+.intro{
+    
+ height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.intro h3{
+    font-size: 3rem;
+    font-family: 'Lobster', cursive;
+}
+.intro h1{
+    font-size: 5rem;
+    font-family: 'Lobster', cursive;
+}
+
+.intro::before{
+    content: "";
+    position: absolute;
+    background: url('img2/cont.png') no-repeat center center/cover;
+    height: 100%;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.5;
+}
+
+
+
+
+/* media queries */
+
+
+ #abt{
+     display: none;
+ }
+
+ .navbar img{
+    margin: 0rem 0rem;
+ }
+}
+@media (max-width: 800px){
+   .intro h1{
+     font-size: 3rem;
+
+   }
+   .intro h3{
+       font-size: 1.6rem;
+   }
+  
+}
+@media (max-width:470px){
+   .intro h1{
+     font-size: 2rem;
+
+   }
+   .intro h3{
+       font-size: 1rem;
+   }
+}
+@media (max-width:305px){
+   .intro h1{
+     font-size: 1.7rem;
+
+   }
+   .intro h3{
+       font-size: 1rem;
+   }
+}
+
+@media (max-width: 912px){
+
+    #info{
+        flex-direction: column;
+    }
+    #info p{
+        
+        width: 100%;
+    }
+}
+@media (max-width: 570px){
+
+    
+    #info p{
+        font-size: 20px;
+        width: 100%;
+    }
+
+    #info img{
+        height: 8rem;
+    }
+}
+
+@media (min-width: 1023px) and (max-width: 1024px){
+    .query{
+        margin-top:50rem;
+    }
+}
+
+@media (max-width: 490px){
+    .bottom h3{
+        font-size: 10px;
+    }
+    .bottom p{
+        font-size: 15px;
+    }
+}
+@media (max-width: 505px){
+  #fb{
+      height: 3rem;
+  }
+  
+  #insta{
+      height: 3rem;
+  }
+  
+  #in{
+      height: 3rem;
+  }
+  
+  #tw{
+      height: 3rem;
+  }
+  
+     
+}
+@media (max-width: 558px){
+
+    .images{
+        width: 100%;
+    }
+  #fb{
+      height: 1.7rem;
+  }
+  
+  #insta{
+      height: 1.7rem;
+  }
+  
+  #in{
+      height: 1.7rem;
+  }
+  
+  #tw{
+      height: 1.7rem;
+  }
+  
+     
+}
+@media (max-width: 366px){
+    .bottom p{
+        width: 100%;
+    }
+}
+
+
+.query{
+    display: flex;
+    flex-direction: column;
+    margin: 10rem 0rem;
+    padding: 2rem;
+
+    justify-content:center;
+    align-items: center;
+    line-height: 3;
+    font-family: 'Teko', sans-serif;
+    font-size: 2rem;
+}
+
+.query input{
+    width: 50%;
+     border-radius:2rem ;
+     height: 2rem;
+     padding: 1rem;
+     font-family: 'Teko', sans-serif;
+     overflow: hidden;
+     font-size: 1.6rem;
+}
+
+input:nth-child(5){
+    height: 10rem;
+}
+
+.mybtn{
+    margin: 3rem;
+    border: none;
+    padding:10px;
+    border-radius: 20px;
+    background-color: #f8486b;
+    color: #fff;
+    width: 8rem;
+    font-size: 2rem;
+    font-family: 'Teko', sans-serif;
+}
+
+
+.map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    overflow: hidden;
+}
+    
+    @media (max-width: 600px){
+    .map{
+        width: 80%;
+        margin: 2rem;
+        
+    }
+}
+
+@media (max-width: 355px){
+    .map{
+        height: 80%;
+        width: 80%;
+        margin: 2rem;
+        
+    }
+}
+
+
+
+/* GRID */
+
+.grid{
+    display:grid;
+    margin-top: 15rem;
+    padding: 3rem;
+    grid-template-columns: 2fr 2fr ;
+    grid-template-rows: 2fr 2fr ;
+}
+
+.first{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+   
+}
+.first img{
+   line-height: 3;
+   height: 60px;
+   
+}
+.first p{
+ width: 60%;
+   margin-top: 1rem;
+   font-family: 'Teko', sans-serif;
+   font-size: 1.5rem;
+}
+.first h1{
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+}
+
+/* second */
+.second{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+   
+}
+.second img{
+   line-height: 3;
+   height: 60px;
+   
+}
+.second p{
+ width: 60%;
+   margin-top: 1rem;
+   font-family: 'Teko', sans-serif;
+   font-size: 1.5rem;
+}
+.second h1{
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+}
+
+/* third */
+.third{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+   
+}
+.third img{
+   line-height: 3;
+   height: 60px;
+   
+}
+.third p{
+ width: 60%;
+   margin-top: 1rem;
+   font-family: 'Teko', sans-serif;
+   font-size: 1.5rem;
+}
+.third h1{
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+}
+
+/* fourth */
+.fourth{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+   
+   
+}
+.fourth img{
+   line-height: 3;
+   height: 60px;
+   
+}
+.fourth p{
+ width: 60%;
+   margin-top: 1rem;
+   font-family: 'Teko', sans-serif;
+   font-size: 1.5rem;
+}
+.fourth h1{
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+}
+
+.divider{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 1.5rem;
+}
+
+
+hr.rounded {
+  border-top: 8px solid #f8486b;
+  border-radius: 5px;
+ width: 50%;
+ overflow: hidden;
+
+
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    padding: 5rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+    font-family: 'Secular One', sans-serif;
+}
+
+.bottom::before{
+    content: "";
+    position: absolute;
+    background:url('img/footer 2.jpg') no-repeat center center/cover;
+    background-color: #0a0a0a;
+    height: 100%;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+    overflow: hidden;
+}
+
+.images{
+    margin: 3rem;
+    overflow: hidden;
+   
+}
+#fb{
+    background-color:#f8486b ;
+    padding: 5px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#insta{
+    background-color:#f8486b ;
+    padding: 5px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#tw{
+    background-color:#f8486b ;
+    padding: 5px;
+    border-radius: 50%;
+overflow: hidden;
+}
+#in{
+    background-color:#f8486b ;
+    padding: 5px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+@media (min-width: 1023px) and (max-width: 1024px){
+    .grid{
+margin-top: 30rem;
+    }
+}
+
+@media (max-width: 840px){
+    .grid{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .second{
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width: 355px){
+    .first p{
+        font-size: 1rem;
+        width: 80%;
+
+    }
+    .second p{
+        font-size: 1rem;
+        width: 80%;
+
+    }
+    .third p{
+        font-size: 1rem;
+        width: 80%;
+
+    }
+    .fourth p{
+        font-size: 1rem;
+        width: 80%;
+
+    }
+}
+
+@media (max-width: 490px){
+    .query input{
+        width: 80%;
+    }
+}
+@media (max-width: 326px){
+    .query input{
+        width: 100%;
+    }
+}
+
+@media (min-width: 1023px) and (max-width: 1024px){
+    .query{
+        margin-top: 25rem;
+    }
+}
+.mybtn{
+    cursor:pointer;
+}
+
+
+
+nav {
+    background: rgb(240, 239, 239);
+    color: #f52750;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+}
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(75, 65, 65);
+    font-size: 1.5rem;
+    font-family: 'Anton', sans-serif;
+}
+nav .mainMenu li a:hover {
+    color: #f52750;
+}
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+nav .mainMenu .closeMenu , .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+.fa-facebook:hover {color: rgb(0, 110, 255);}
+.fa-twitter:hover {color: rgb(86, 154, 243);}
+.fa-instagram:hover {color: rgb(255, 0, 191);}
+.fa-linkedin:hover {color: rgb(255, 123, 0);}
+
+nav .logo {
+    margin: 6px;
+    font-size: 25px;
+    cursor: pointer;
+}
+@media(max-width: 800px){
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        transition: top 1s ease;
+        display: none;
+    }
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+    }
+    nav .openMenu {
+        display: block;
+    }
+    nav .mainMenu li a:hover {
+        background: none;
+        color: #f52750;
+        font-size: 1.6rem;
+
+    }
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+}
+
+.logo img{
+  height: 5rem;
+
+}
+
+.icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+#btn{
+    font-size: 15px;
+    padding: 5px 20px;
+   border-radius: 50px;
+  background-color: #fd6885;
+ border: none;
+  color: white;
+  font-family: 'Dancing Script', cursive;
+   
+}
+
+#btn:hover{
+    background-color:#f8486b ;
+    cursor: pointer;
+ 
+}
+</style>
+
+<body>
+    <!-- navbar -->
+    <!-- <div class="navbar">
+        <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        <img src="img2/logo4.png" alt="">
+        <ul class="nav">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Services</a></li>
+            <button id="abt">Email Us</button>
+        </ul> 
+    </div> -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Humburger Menu</title>
+        <link rel="stylesheet" href="./style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+    </head>
+    <body>
+            <nav>
+                <div class="logo"><img src="img/logo4.png" alt=""></div>
+                <div class="openMenu"><i class="fa fa-bars"></i></div>
+                <ul class="mainMenu">
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <div class="closeMenu"><i class="fa fa-times"></i></div>
+                    <span class="icons">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-linkedin"></i>
+                    </span>
+                </ul>
+            </nav>
+
+    <!-- intro section -->
+
+    <div class="intro">
+        <section class="home">
+            <h3>what are wating for</h3>
+            <h1>Contact US Today</h1>
+        </section>
+    </div>
+
+   <form action="mailto:divyanshtyagiof8@gmail.com" method="post" enctype="text/plain" class="query">
+First Name: <input type="text" placeholder="enter your first name" required>
+Last Name: <input type="text" placeholder="enter your last name" required>
+E-mail: <input type="text" placeholder="enter your e-mail" required>
+Your City: <input type="text" placeholder="enter your city" required>
+Your Message: <input type="text" placeholder="enter your message" required>
+
+<button class="mybtn">Submit</button>
+
+   </form>
+
+    <div class="divider"> 
+        <hr class="rounded">
+    </div>
+
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111989.15209554778!2d77.32481641787062!3d28.699785606662115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf1bb41c50fdf%3A0xe6f06fd26a7798ba!2sGhaziabad%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1601520332620!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+
+    <footer class="bottom">
+        <h3>Follow US for more offer and updates</h3>
+        <h2>Stay In Touch</h2>
+        <p>Hope you get what you want, thankyou for visiting on our site. you are welcomed again and again</p>
+        <div class="images">
+            <a  href="https://www.facebook.com/" target="_blank" class="hv"><img id="fb" src="img3/fb2.png" alt=""></a>
+       <a href="https://www.instagram.com/"  target="_blank" class="hv"><img id="insta" src="img3/in2.png" alt=""></a>
+       <a href="https://twitter.com/" target="blank" class="hv"><img id="tw" src="img3/twt.png" alt=""></a>
+       <a href="https://www.linkedin.com/" target="blank" class="hv"><img id="in" src="img3/ldn2.png" alt=""></a>
+            
+        </div>
+    </footer>
+    
+ 
+<script>function myFunction(x) {
+    x.classList.toggle("change");
+  }
+  
+  const mainMenu = document.querySelector('.mainMenu');
+const closeMenu = document.querySelector('.closeMenu');
+const openMenu = document.querySelector('.openMenu');
+
+
+
+
+openMenu.addEventListener('click',show);
+closeMenu.addEventListener('click',close);
+
+function show(){
+    mainMenu.style.display = 'flex';
+    mainMenu.style.top = '0';
+}
+function close(){
+    mainMenu.style.top = '-100%';
+}
+  
+  </script>
+</body>
+</html>

@@ -1,0 +1,657 @@
+        
+        
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Peddana&family=Secular+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Teko:wght@500&display=swap" rel="stylesheet">
+  
+    <title>Services Project
+    </title>
+</head>
+<style>
+    /* navbar */
+    * {
+        margin:0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+   
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    align-items: center;
+   
+}
+
+.nav{
+    display: flex;
+    list-style: none;
+
+
+padding: 1rem 5rem;
+  
+    
+    
+}
+
+.nav li a{
+    text-decoration: none;
+  margin: 3rem;
+   font-size: 20px;
+   font-family: 'Secular One', sans-serif;
+   color: black;
+   
+    
+}
+.container {
+  display: inline-block;
+  cursor: pointer;
+ right: 1rem;
+ display: none;
+
+ position: absolute;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+.navbar img{
+    height: 5rem;
+   padding: 4px;
+ margin: 0rem 3rem;
+ cursor: pointer;
+    
+}
+
+#abt{
+    font-size: 15px;
+    padding: 5px 30px;
+   border-radius: 50px;
+  background-color: #fd6885;
+ border: none;
+  color: white;
+  font-family: 'Secular One', sans-serif;
+   
+
+}
+
+.nav li a:hover{
+    color: #fd6885 ;
+   
+    cursor: pointer;
+}
+
+#abt:hover{
+    background-color:#f8486b ;
+    cursor: pointer;
+ 
+}
+
+/* intro section */
+
+.intro{
+    
+ height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.intro h3{
+    font-size: 3rem;
+    font-family: 'Lobster', cursive;
+}
+.intro h1{
+    font-size: 5rem;
+    font-family: 'Lobster', cursive;
+}
+
+.intro::before{
+    content: "";
+    position: absolute;
+    background: url('https://1.bp.blogspot.com/-z1QoT7ZttBc/X8-KobSWbPI/AAAAAAAAA5c/KwDqPkqxktQZCLLONQ1rE5JTfI6gTFeAgCLcBGAsYHQ/s320/services.jpg') no-repeat center center/cover;
+    height: 100%;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.8;
+}
+
+
+
+
+/* media queries */
+@media (max-width: 1160px){
+    .nav li a{
+        
+        display: none;
+    }
+    .container{
+        display: block;
+    }
+
+ #abt{
+     display: none;
+ }
+
+ .navbar img{
+    margin: 0rem 0rem;
+ }
+}
+@media (max-width: 800px){
+   .intro h1{
+     font-size: 3rem;
+
+   }
+   .intro h3{
+       font-size: 1.6rem;
+   }
+  
+}
+@media (max-width:470px){
+   .intro h1{
+     font-size: 2rem;
+
+   }
+   .intro h3{
+       font-size: 1rem;
+   }
+}
+@media (max-width:305px){
+   .intro h1{
+     font-size: 1.7rem;
+
+   }
+   .intro h3{
+       font-size: 1rem;
+   }
+}
+
+@media (max-width: 912px){
+
+    #info{
+        flex-direction: column;
+    }
+    #info p{
+        
+        width: 100%;
+    }
+}
+@media (max-width: 570px){
+
+    
+    #info p{
+        font-size: 20px;
+        width: 100%;
+    }
+
+    #info img{
+        height: 8rem;
+    }
+}
+
+@media (min-width: 1023px) and (max-width: 1024px){
+    .query{
+        margin-top:50rem;
+    }
+}
+
+@media (max-width: 490px){
+    .bottom h3{
+        font-size: 10px;
+    }
+    .bottom p{
+        font-size: 15px;
+    }
+}
+@media (max-width: 505px){
+  #fb{
+      height: 3rem;
+  }
+  
+  #insta{
+      height: 3rem;
+  }
+  
+  #in{
+      height: 3rem;
+  }
+  
+  #tw{
+      height: 3rem;
+  }
+  
+     
+}
+@media (max-width: 558px){
+
+    .images{
+        width: 100%;
+    }
+  #fb{
+      height: 1.7rem;
+  }
+  
+  #insta{
+      height: 1.7rem;
+  }
+  
+  #in{
+      height: 1.7rem;
+  }
+  
+  #tw{
+      height: 1.7rem;
+  }
+  
+     
+}
+@media (max-width: 366px){
+    .bottom p{
+        width: 100%;
+    }
+}
+
+
+.query{
+    display: flex;
+    flex-direction: column;
+    margin: 10rem 0rem;
+    padding: 2rem;
+
+    justify-content:center;
+    align-items: center;
+    line-height: 3;
+    font-family: 'Teko', sans-serif;
+    font-size: 2rem;
+}
+
+.query input{
+    width: 50%;
+     border-radius:2rem ;
+     height: 2rem;
+     padding: 1rem;
+     font-family: 'Teko', sans-serif;
+     overflow: hidden;
+     font-size: 1.6rem;
+}
+
+input:nth-child(4){
+    height: 10rem;
+}
+
+.mybtn{
+    margin: 3rem;
+    border: none;
+    padding:10px;
+    border-radius: 20px;
+    background-color: #f8486b;
+    color: #fff;
+    width: 8rem;
+    font-size: 2rem;
+    font-family: 'Teko', sans-serif;
+}
+
+
+.map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    overflow: hidden;
+}
+    
+    @media (max-width: 600px){
+    .map{
+        width: 80%;
+        margin: 2rem;
+        
+    }
+}
+
+@media (max-width: 355px){
+    .map{
+        height: 80%;
+        width: 80%;
+        margin: 2rem;
+        
+    }
+}
+
+
+
+/* GRID */
+
+.grid{
+    display:grid;
+    margin-top: 15rem;
+    padding: 3rem;
+    grid-template-columns: 2fr 2fr ;
+    grid-template-rows: 2fr 2fr ;
+}
+
+.first{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+   
+}
+.first img{
+   line-height: 3;
+   height: 60px;
+   
+}
+.first p{
+ width: 60%;
+   margin-top: 1rem;
+   font-family: 'Teko', sans-serif;
+   font-size: 1.5rem;
+}
+.first h1{
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+}
+
+/* second */
+.second{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+   
+}
+.second img{
+   line-height: 3;
+   height: 60px;
+   
+}
+.second p{
+ width: 60%;
+   margin-top: 1rem;
+   font-family: 'Teko', sans-serif;
+   font-size: 1.5rem;
+}
+.second h1{
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+}
+
+/* third */
+.third{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+   
+}
+.third img{
+   line-height: 3;
+   height: 60px;
+   
+}
+.third p{
+ width: 60%;
+   margin-top: 1rem;
+   font-family: 'Teko', sans-serif;
+   font-size: 1.5rem;
+}
+.third h1{
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+}
+
+/* fourth */
+.fourth{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+   
+   
+}
+.fourth img{
+   line-height: 3;
+   height: 60px;
+   
+}
+.fourth p{
+ width: 60%;
+   margin-top: 1rem;
+   font-family: 'Teko', sans-serif;
+   font-size: 1.5rem;
+}
+.fourth h1{
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+}
+
+.divider{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 5rem;
+}
+
+
+hr.rounded {
+  border-top: 8px solid #f8486b;
+  border-radius: 5px;
+ width: 50%;
+ overflow: hidden;
+
+
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    padding: 5rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+    font-family: 'Secular One', sans-serif;
+}
+
+.bottom::before{
+    content: "";
+    position: absolute;
+    background:url('https://1.bp.blogspot.com/-HPESpLwGyuQ/X8-KxFiG-LI/AAAAAAAAA5k/puj9a4oX2C8-4oFq_C0ZK4UWRhFzeadmgCLcBGAsYHQ/s320/footer%2B2.jpg') no-repeat center center/cover;
+    background-color: #0a0a0a;
+    height: 100%;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+    overflow: hidden;
+}
+
+.images{
+    margin: 3rem;
+    overflow: hidden;
+   
+}
+#fb{
+    background-color:#f8486b ;
+    padding: 5px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#insta{
+    background-color:#f8486b ;
+    padding: 5px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#tw{
+    background-color:#f8486b ;
+    padding: 5px;
+    border-radius: 50%;
+overflow: hidden;
+}
+#in{
+    background-color:#f8486b ;
+    padding: 5px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+@media (min-width: 1023px) and (max-width: 1024px){
+    .grid{
+margin-top: 30rem;
+    }
+}
+
+@media (max-width: 840px){
+    .grid{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .second{
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width: 355px){
+    .first p{
+        font-size: 1rem;
+        width: 80%;
+
+    }
+    .second p{
+        font-size: 1rem;
+        width: 80%;
+
+    }
+    .third p{
+        font-size: 1rem;
+        width: 80%;
+
+    }
+    .fourth p{
+        font-size: 1rem;
+        width: 80%;
+
+    }
+}
+
+</style>
+
+<body>
+    <!-- navbar -->
+    <div class="navbar">
+        <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        <img src="https://1.bp.blogspot.com/-d00lgkT_bmE/X8-KmG-mjMI/AAAAAAAAA5I/zxgnCg7YfdQMRF5rMT7jUy8mO_pS_wcrwCLcBGAsYHQ/s320/logo4.png" alt="">
+        <ul class="nav">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Services</a></li>
+            <button id="abt">Email Us</button>
+        </ul> 
+    </div>
+
+    <!-- intro section -->
+
+    <div class="intro">
+        <section class="home">
+            <h3>always happy to</h3>
+            <h1>Serve Our ClientS</h1>
+        </section>
+    </div>
+
+    <section class="grid">
+<div class="first">
+    <img src="https://1.bp.blogspot.com/-IWt174uyAJM/X8-KmstUgII/AAAAAAAAA5U/WcDyDW24N6IPiy-I9fJ3OzIYQ0jNsYWSgCLcBGAsYHQ/s0/saloon.png" alt="">
+    <h1>Hair salon</h1>
+    <p>we provide tou the best offers on you hair cut and suggested you the best place for haircut at affordable price.</p>
+</div>
+<div class="second">
+    <img src="https://1.bp.blogspot.com/-D0njAejIqcc/X8-KqNZfixI/AAAAAAAAA5g/2qRqhylaVKEtNPTymehShqpHtGm-kEgyACLcBGAsYHQ/s0/groceries.png" alt="">
+    <h1>Groceries</h1>
+    <p>You can buy groceries from the cheapest store near you in ghaziabad city. we also provide the information about offers and discount near by you.</p>
+</div>
+<div class="third">
+    <img src="https://1.bp.blogspot.com/-qafx57IseTE/X8-KnJx6xjI/AAAAAAAAA5Y/VhZNLH8pMtEWqvSfgsV_JhthEMSbr_xdgCLcBGAsYHQ/s0/spa.png" alt="">
+    <h1>Spa</h1>
+    <p>If you are a workout lover or a busy person, just checkout the spa near you and enjoy the service at discounted price and feel relaxed.</p>
+</div>
+<div class="fourth">
+    <img src="https://1.bp.blogspot.com/-eyYLfzGprrY/X8-KmKwGpZI/AAAAAAAAA5Q/yhPBeinDOiYhKpWn0XLYfCDqO2bjBzuaQCLcBGAsYHQ/s0/medical.png" alt="">
+    <h1>Medical</h1>
+    <p>Choose the right store when buying medicines or other medical equipment, just checkout our site and see the medical stores provides you the affordable medicines.</p>
+</div>
+    </section>
+
+    <div class="divider"> 
+        <hr class="rounded">
+    </div>
+
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111989.15209554778!2d77.32481641787062!3d28.699785606662115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf1bb41c50fdf%3A0xe6f06fd26a7798ba!2sGhaziabad%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1601520332620!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+
+    <footer class="bottom">
+        <h3>Follow US for more offer and updates</h3>
+        <h2>Stay In Touch</h2>
+        <p>Hope you get what you want, thankyou for visiting on our site. you are welcomed again and again</p>
+        <div class="images">
+           <a  href="" class="hv"><img id="fb" src="https://1.bp.blogspot.com/-Gh6Kxt-_7Us/X8-K4DoKAVI/AAAAAAAAA58/7Ay7EB-teRQLkoINgu8vbhvKfDDply3XgCLcBGAsYHQ/s0/fb2.png" alt=""></a>
+           <a href="" class="hv"><img id="insta" src="https://1.bp.blogspot.com/-S06Hoyk7YBQ/X8-K0lk3cjI/AAAAAAAAA5o/g5Ni3nJtKT0dmp_xZoQyuBvxpr--r_ZggCLcBGAsYHQ/s0/in2.png" alt=""></a>
+           <a href="" class="hv"><img id="tw" src="https://1.bp.blogspot.com/-r8BEZQsYjRs/X8-K5MOOyRI/AAAAAAAAA6A/BKhBFMw4XNAERUZb9CmnB4G4opNiTONigCLcBGAsYHQ/s0/twt.png" alt=""></a>
+           <a href="" class="hv"><img id="in" src="https://1.bp.blogspot.com/-GzF6BMkH1Z4/X8-K2DSUHfI/AAAAAAAAA54/WaR6zIJ2xfUrxz0xmT21Pj8c2-7n7euEQCLcBGAsYHQ/s0/ldn2.png" alt=""></a>
+            
+        </div>
+    </footer>
+    
+ 
+<script>function myFunction(x) {
+    x.classList.toggle("change");
+  }</script>
+</body>
+</html>

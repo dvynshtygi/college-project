@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grocery stores</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Reggae+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+</head>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body  {
+   background-color: moccasin;
+}
+nav {
+    background: rgb(223, 221, 221);
+    color: #f8486b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+    margin-right: 2rem;
+}
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(99, 96, 96);
+    font-size: 1.5rem;
+    font-family: 'Anton', sans-serif;
+}
+nav .mainMenu li a:hover {
+  color: #f8486b;
+}
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+nav .mainMenu .closeMenu , .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+.fa-facebook:hover {color: rgb(0, 110, 255);}
+.fa-twitter:hover {color: rgb(86, 154, 243);}
+.fa-instagram:hover {color: rgb(255, 0, 191);}
+.fa-linkedin:hover {color: rgb(255, 123, 0);}
+
+nav .logo {
+    margin: 6px;
+    font-size: 25px;
+    cursor: pointer;
+}
+@media(max-width: 800px){
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        transition: top 1s ease;
+        display: none;
+    }
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+    }
+    nav .openMenu {
+        display: block;
+    }
+    nav .mainMenu li a:hover {
+        background: none;
+        color:#f8486b;
+        font-size: 1.6rem;
+    }
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+} 
+
+.logo img{
+    height: 5rem;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    font-family: 'Reggae One', cursive;
+    font-size: 3rem;
+    overflow: hidden;
+}
+.images{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem;
+line-height: 10;
+}
+
+@media (max-width: 778px){
+    .images img{
+        height: 20rem;
+    }
+}
+@media (max-width: 582px){
+    .images img{
+        height: 15rem;
+    }
+}
+@media (max-width: 436px){
+    .images img{
+        height: 12rem;
+    }
+}
+
+@media (max-width: 510px){
+    .heading{
+        font-size: 2rem;
+    }
+}
+
+.footer{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#f8486b;
+    overflow: hidden;
+}
+
+
+</style>
+<body>
+        <nav>
+            <div class="logo"><img src="./img1/logo4.png" alt=""></div>
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <ul class="mainMenu">
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./about.html">About</a></li>
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+                <span class="icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin"></i>
+                </span>
+            </ul>
+        </nav>
+
+        <div class="heading"><h1>GROCERY</h1></div>
+
+<div class="images">
+    <div><img src="img1/1.jpg" alt=""></div>
+    <div><img src="img1/2.jpg" alt=""></div>
+    <div><img src="img1/3.jpg" alt=""></div>
+    <div><img src="img1/4.jpg" alt=""></div>
+    <div><img src="img1/5.jpg" alt=""></div>
+    <div><img src="img1/6.jpg" alt=""></div>
+    <div><img src="img1/7.jpg" alt=""></div>
+    <div><img src="img1/8.jpg" alt=""></div>
+    <div><img src="img1/9.jpg" alt=""></div>
+    
+</div>
+
+<div class="footer">
+    <h3>Copyright &copy 2021 - The Ozone</h3>
+
+</div>
+
+  
+   <script>
+       const mainMenu = document.querySelector('.mainMenu');
+const closeMenu = document.querySelector('.closeMenu');
+const openMenu = document.querySelector('.openMenu');
+
+
+
+
+openMenu.addEventListener('click',show);
+closeMenu.addEventListener('click',close);
+
+function show(){
+    mainMenu.style.display = 'flex';
+    mainMenu.style.top = '0';
+}
+function close(){
+    mainMenu.style.top = '-100%';
+}
+
+   </script>
+</body>
+</html>

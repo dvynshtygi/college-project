@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>theozone.com</title>
+  <title>theozone.com</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Nerko+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@700&family=East+Sea+Dokdo&family=Lobster&family=Ranchers&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+</head>
+<style>
+  *{
+    margin: 0px;
+    padding: 0px;
+
+  }
+
+  body{
+    background-color: oldlace;
+    
+  }
+.navbar{
+  display: flex;
+background:#fcfcfc;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+ 
+}
+  
+  .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   list-style: none;
+   padding: 1rem;
+ position: absolute;
+ float: right;
+ right: 3rem;
+ overflow: hidden;
+  
+  }
+  .navbar img{
+    display: flex;
+    height: 4rem;
+   padding: 1rem;
+
+   justify-content: center;
+    align-items: center;
+   list-style: none;
+   padding: 1rem;
+
+  }
+  
+  .nav li a{
+    text-decoration: none;
+    margin: 2rem;
+    font-family: 'Anton', sans-serif;
+    color: black;
+    font-size: 18px;
+    
+  }
+  .nav li a:hover{
+   
+    color:  #f8486b;
+    font-size: x-large;
+    cursor: pointer;
+  }
+
+  .grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+   overflow: hidden;
+  }
+
+  .para button{
+margin-top: 2rem;
+
+  }
+  .para h3{
+margin-top: 1rem;
+font-family: 'Lobster', cursive;
+
+
+
+  }
+  .para h1{
+margin-top: 1rem;
+width: 50%;
+font-family: 'Ranchers', cursive;
+font-size: 2.6rem;
+
+
+  }
+  .para p{
+margin-top: 1rem;
+width: 80%;
+font-family: 'East Sea Dokdo', cursive;
+font-size: 1.4rem;
+
+
+  }
+  .mn {
+  background-color: #f8486b; 
+  border: none; 
+  color: white; 
+  padding: 12px 16px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  border-radius: 4rem;
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+
+  
+
+
+}
+.mn i{
+  margin-left: 0.5rem;
+
+  
+  
+}
+
+.mn:hover{
+  background-color: #f52750;
+}
+
+#btn{
+    font-size: 15px;
+    padding: 5px 20px;
+   border-radius: 50px;
+  background-color: #fd6885;
+ border: none;
+  color: white;
+  font-family: 'Dancing Script', cursive;
+   
+
+}
+
+#btn:hover{
+    background-color:#f8486b ;
+    cursor: pointer;
+ 
+}
+
+#btn i{
+  margin-left: 0.5rem;
+}
+.grid img{
+  flex: 2;
+}
+
+.cards{
+  display: flex;
+ 
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem;
+background-color: rgb(2 38 40 / 1) ;
+overflow: hidden;
+}
+
+.card1{
+  display: flex;
+  flex-direction: column;
+background-color: grey;
+padding: 1rem;
+align-items: center;
+justify-content: center;
+}
+
+.card1 h3{
+  color: white;
+}
+.card1 i{
+  color:#f52750;
+}
+.card1 p{
+
+}
+.card2{
+  display: flex;
+  flex-direction: column;
+background-color: grey;
+padding: 1rem;
+align-items: center;
+justify-content: center;
+}
+
+.card2 h3{
+  color: white;
+}
+.card2 i{
+  color:#f52750;
+}
+.card2 p{
+
+}
+.card3{
+  display: flex;
+  flex-direction: column;
+background-color: grey;
+padding: 1rem;
+align-items: center;
+justify-content: center;
+}
+
+.card3 h3{
+  color: white;
+}
+.card3 i{
+  color:#f52750;
+  margin-right: 5px;
+}
+.card3 p{
+
+}
+.card4{
+  display: flex;
+  flex-direction: column;
+background-color: grey;
+padding: 1rem;
+align-items: center;
+justify-content: center;
+}
+
+.card4 h3{
+  color: white;
+}
+.card4 i{
+  color:#f52750;
+}
+.card4 p{
+
+}
+
+
+.firstcategory{
+  margin-top: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+line-height: 5;
+
+}
+.secondcategory{
+  margin-top: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+line-height: 5;
+
+}
+.thirdcategory{
+  margin-top: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+line-height: 5;
+
+}
+.fourthcategory{
+  margin-top: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+line-height: 5;
+
+}
+  
+  .mr1 button{
+    padding: 10px 30px;
+    background-color:moccasin;
+    border-radius: 2rem;
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+    color: #f52750;
+    border: none;
+    
+   
+  }
+
+  
+  
+
+  .mr1 button:hover{
+ background-color:  #f52750;
+ color: moccasin;
+ cursor: pointer;
+  }
+
+
+  .mr2 button{
+    padding: 10px 30px;
+    background-color:moccasin;
+    border-radius: 2rem;
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+    color: #f52750;
+    border: none;
+   
+  }
+
+  .mr2 button:hover{
+ background-color:  #f52750;
+ color: moccasin;
+ cursor: pointer;
+  }
+   
+  .mr3 button{
+    padding: 10px 30px;
+    background-color:moccasin;
+    border-radius: 2rem;
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+    color: #f52750;
+    border: none;
+   
+  }
+
+  .mr3 button:hover{
+ background-color:  #f52750;
+ color: moccasin;
+ cursor: pointer;
+  }
+   
+  .mr4 button{
+    padding: 10px 30px;
+    background-color:moccasin;
+    border-radius: 2rem;
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+    color: #f52750;
+    border: none;
+   
+  }
+
+  .mr4 button:hover{
+ background-color:  #f52750;
+ color: moccasin;
+ cursor: pointer;
+  }
+   
+/* Rounded border */
+hr.rounded {
+  border-top: 8px solid rgb(216, 145, 22);
+  border-radius: 5px;
+  width: 72%;
+}
+
+.hhh{
+  font-family: 'Reggae One', cursive;
+  font-size: 35px;
+}
+  
+.map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15rem;
+    overflow: hidden;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    padding: 5rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+    font-family: 'Secular One', sans-serif;
+}
+
+.bottom::before{
+    content: "";
+    position: absolute;
+    background:url('img/footer 2.jpg') no-repeat center center/cover;
+    background-color: #0a0a0a;
+    height: 100%;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+    overflow: hidden;
+}
+
+.images{
+    margin: 3rem;
+    overflow: hidden;
+   
+}
+#fb{
+    background-color:#f8486b ;
+    padding: 5px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#insta{
+    background-color:#f8486b ;
+    padding: 5px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#tw{
+    background-color:#f8486b ;
+    padding: 5px;
+    border-radius: 50%;
+overflow: hidden;
+}
+#in{
+    background-color:#f8486b ;
+    padding: 5px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#salonimages img{
+  height: 30rem;
+  margin: 2rem;
+}
+    
+#spaimages img{
+  height: 30rem;
+  margin: 2rem;
+}
+
+#groceriesimages img{
+  height: 20rem;
+  margin: 10px;
+}
+
+#medicalimages img{
+ 
+  height: 15rem;
+  margin: 10px;
+}
+
+@media(max-width: 1000px){
+  .nav {
+    display: ;
+  }
+}
+
+   @media(max-width: 1000px){
+     .grid{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+     }
+    
+   }
+   @media(max-width: 1000px){
+     .para{
+     display: flex;
+     flex-direction: column;
+       justify-content: center;
+       align-items: center;
+     }
+   }
+   @media(max-width: 1000px){
+     .cards{
+    margin-top: 8rem;
+     }
+ 
+
+     .para h1{
+       display: flex;
+      justify-content: center;
+      align-items: center;
+       width: 100%;
+      
+     }
+    
+   }
+
+   @media(max-width: 1414px){
+     .firstcategory{
+       margin-top: 40rem;
+     }
+   }
+
+   @media(max-width: 1414px){
+     .secondcategory{
+       margin-top: 80rem;
+     }
+   }
+   @media(max-width: 1414px){
+     .thirdcategory{
+       margin-top: 70rem;
+     }
+   }
+   @media(max-width: 1414px){
+     .fourthcategory{
+       margin-top: 50rem;
+     }
+   }
+   @media(max-width: 1378px){
+     .map{
+       margin-top: 30rem;
+     }
+   }
+
+@media(max-width: 850px){
+  .cards{
+   display: none;
+    
+  }
+  
+}
+
+@media(max-width: 796px){
+.firstcategory{
+  margin-top: 60rem;
+}
+}
+@media(max-width: 928px){
+.secondcategory{
+  margin-top: 100rem;
+}
+}
+@media(max-width: 928px){
+.thirdcategory{
+  margin-top: 100rem;
+}
+}
+@media(max-width: 928px){
+.fourthcategory{
+  margin-top: 75rem;
+}
+}
+
+@media(max-width: 472px){
+  .grid h1{
+    font-size: 30px;
+  }
+}
+
+
+
+@media (max-width: 355px){
+    .map{
+        height: 80%;
+        width: 80%;
+        margin: 2rem;
+        
+    }
+}
+
+@media(max-width: 1344px){
+  .firstcategory{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+}
+</style>
+
+<body>
+  <div class="navbar">
+    <img src="img/logo4.png" alt="" id="logo">
+    <ul class="nav">
+      <li><a href="">Home</a></li>
+      <li><a href="">Services</a></li>
+      <li><a href="">About</a></li>
+      <li><a href=""> contact</a></li>
+      <button id="btn"> EMAIL US<i class="fa fa-envelope"></i></button>
+    </ul>
+  </div>
+  <div class="grid">
+    <img id="ddd" src="img/main2.png" alt="">
+    <div class="para">
+      <h3>GRAB NOW</h3>
+      <h1>BEST OFFERS AND DISCOUNT!</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nesciunt in libero accusantium illum perferendis veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi suscipit nobis tempora quasi non dolor libero fugit repellat labore totam culpa laboriosam eveniet odio iste, optio a! Velit, voluptas possimus facere ipsam ad ea exercitationem!</p>
+
+    <button class="mn">check now<i class="fa fa-arrow-right"></i></button>
+    </div>
+  </div>
+<div class="cards">
+  <div class="card1">
+<h3><i class="fa fa-gift"></i> BEST OFFERS</h3>
+<p>in your city</p>
+  </div>
+  <div class="card2">
+<h3><i class="fa fa-thumbs-up"></i> STRESS FREE</h3>
+<p>easy to use</p>
+  </div>
+  <div class="card3">
+<h3><i class="fa fa-bitcoin"></i>HUGE SAVING</h3>
+<p>at lowest price</p>
+  </div>
+  <div class="card4">
+<h3><i class="fa fa-check"></i> GENUINE OFFERS</h3>
+<p>100% real</p>
+  </div>
+  
+</div>
+
+<div class="firstcategory">
+  <h2 class="hhh">SALON</h2>
+ 
+  <div id="salonimages">
+    <img src="img/Screenshot (389) (1).jpg" alt="">
+    <img src="img/Screenshot (392).jpg" alt="">
+    <img src="img/Screenshot (393).jpg" alt="">
+  </div>
+  <div class="mr1">
+    <button>More</button>
+  </div>
+
+</div>
+
+
+</div>
+
+
+
+<div class="secondcategory">
+  <hr class="rounded">
+  <h2 class="hhh">SPA</h2>
+ 
+  <div id="spaimages">
+    <img src="img/Screenshot (395).jpg" alt="">
+    <img src="img/Screenshot (396).jpg" alt="">
+    <img src="img/Screenshot (396) (1).jpg" alt="">
+  </div>
+  <div class="mr2">
+    <button>More</button>
+  </div>
+
+</div>
+
+
+
+</div>
+
+<div class="thirdcategory">
+  <hr class="rounded">
+  <h2 class="hhh">GROCERIES</h2>
+  
+  <div id="groceriesimages">
+    <img src="img/Screenshot (397).jpg" alt="">
+    <img src="img/Screenshot (398).jpg" alt="">
+    <img src="img/Screenshot (399).jpg" alt="">
+  </div>
+  <div class="mr3">
+    <button>More</button>
+  </div>
+
+</div>
+
+
+</div>
+
+<div class="fourthcategory">
+  <hr class="rounded">
+  <h2 class="hhh">MEDICAL</h2>
+  
+  <div id="medicalimages">
+    <img src="img/Screenshot (402).jpg" alt="">
+    <img src="img/Screenshot (403).jpg" alt="">
+    <img src="img/Screenshot (405).jpg" alt="">
+  </div>
+  <div class="mr4">
+    <button>More</button>
+  </div>
+
+</div>
+<div class="map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111989.15209554778!2d77.32481641787062!3d28.699785606662115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf1bb41c50fdf%3A0xe6f06fd26a7798ba!2sGhaziabad%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1601520332620!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
+<footer class="bottom">
+  <h3>Follow US for more offer and updates</h3>
+  <h2>Stay In Touch</h2>
+  <p>Hope you get what you want, thankyou for visiting on our site. you are welcomed again and again</p>
+  <div class="images">
+     <a  href="https://www.facebook.com/" target="_blank" class="hv"><img id="fb" src="img/fb2.png" alt=""></a>
+     <a href="https://www.instagram.com/"  target="_blank" class="hv"><img id="insta" src="img/in2.png" alt=""></a>
+     <a href="https://twitter.com/" target="blank" class="hv"><img id="tw" src="img/twt.png" alt=""></a>
+     <a href="https://www.linkedin.com/" target="blank" class="hv"><img id="in" src="img/ldn2.png" alt=""></a>
+      
+  </div>
+</footer>
+
+<script>const http = require('http');
+  const fs = require('fs');
+  
+  const hostname = '127.0.0.1';
+  const port = 3000;
+  const home = fs.readFileSync('index.html')
+  const about = fs.readFileSync('./about.html')
+  const services = fs.readFileSync('./services.html')
+  const contact = fs.readFileSync('./contact.html')
+  
+  const server = http.createServer((req, res)=>{
+      console.log(req.url);
+      url = req.url;
+  
+      res.statusCode = 200;
+      res.setHeader('Content-Type', 'text/html');
+      if(url == '/'){
+          res.end(home);
+      }
+      else if(url == '/about'){
+          res.end(about);
+      }
+      else if(url == '/services'){
+          res.end(services);
+      }
+      else if(url == '/contact'){
+          res.end(contact);
+      }
+      else{
+          res.statusCode = 404;
+          res.end("<h1>404 not found</h1>");
+      }
+  });
+  
+  server.listen(port, hostname, () => {
+      console.log(`Server running at http://${hostname}:${port}/`);
+    });</script>
+  
+</body>
+
+
+</html>
